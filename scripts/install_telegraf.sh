@@ -3,7 +3,6 @@
 BIN_DIR=/usr/bin
 LOG_DIR=/var/log/telegraf
 SCRIPT_DIR=$PWD/scripts
-LOGROTATE_DIR=/etc/logrotate.d
 
 
 function install_systemd {
