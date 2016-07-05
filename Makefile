@@ -5,3 +5,10 @@ install-telegraf:prepare
 
 prepare:
 	mkdir -p /etc/telegraf
+
+remove-telegraf:
+	./scripts/remove_telegraf.sh
+
+uninstall: remove-telegraf
+	@echo "Uninstalled successful"
+	

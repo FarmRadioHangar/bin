@@ -8,7 +8,7 @@ if [[ -f /etc/os-release ]]; then
     if [[ $? -eq 0 ]]; then
       echo "Uninstalling telegraf"
       rm -r /etc/telegraf
-      rm -f /usr/telegraf
+      rm -f /usr/bin/telegraf
       disable_systemd
     else
       echo "Need to install systemd"
