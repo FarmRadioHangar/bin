@@ -9,7 +9,9 @@ in the `etc` directory.
 ```bash
 git clone https://github.com/FarmRadioHangar/bin.git
 cd bin
-make 
+
+# Install telegraf
+make install-telegraf
 ```
 
 To uninstall
