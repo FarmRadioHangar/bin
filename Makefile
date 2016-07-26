@@ -8,7 +8,7 @@ configure:
 	cp -i  ./etc/telegraf.env /etc/default/telegraf.env
 
 install:
-	cp -i  ./etc/telegraf.env /etc/default/telegraf.env
+	./scripts/install_telegraf.sh
 
 remove-telegraf:
 	./scripts/remove_telegraf.sh
