@@ -1,20 +1,14 @@
 # bin
 Important builds
 
-# Installation
+# telegraf
 
-Before you run the installation command. Edit the respective configuration files
-in the `etc` directory.
-
-```bash
-git clone https://github.com/FarmRadioHangar/bin.git
-cd bin
-
-# Install telegraf
-make install-telegraf
+Install
+```shell
+make install telegraf
 ```
 
-To uninstall
-```bash
-make uninstall
-```
+Then edit `/etc/default/telegraf.env` to configure the relevant settings.
+
+Now you can start the service by `systemctl start telegraf`
+
