@@ -4,7 +4,7 @@ Documentation=https://github.com/influxdata/telegraf
 After=network.target
 
 [Service]
-EnvironmentFile=-/etc/default/telegraf
+EnvironmentFile=-/etc/default/telegraf.env
 User=telegraf
 Environment='STDOUT=/var/log/telegraf/telegraf.log'
 Environment='STDERR=/var/log/telegraf/telegraf.log'
