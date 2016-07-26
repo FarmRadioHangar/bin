@@ -1,11 +1,14 @@
-install-telegraf:prepare
+all:
+	@echo "yay!"
+
+configure:
+	mkdir -p /etc/telegraf
 	cp -i ./bin/telegraf /usr/bin
 	cp -i  ./etc/telegraf.conf /etc/telegraf/telegraf.conf
 	cp -i  ./etc/telegraf.env /etc/default/telegraf.env
-	./scripts/install_telegraf.sh
 
-prepare:
-	mkdir -p /etc/telegraf
+install:
+	cp -i  ./etc/telegraf.env /etc/default/telegraf.env
 
 remove-telegraf:
 	./scripts/remove_telegraf.sh
