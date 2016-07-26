@@ -3,7 +3,7 @@ Important builds
 
 # telegraf
 
-Install
+configure
 ```shell
 make configure
 ```
