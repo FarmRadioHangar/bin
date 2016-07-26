@@ -5,10 +5,14 @@ Important builds
 
 Install
 ```shell
-make install telegraf
+make configure
 ```
 
-Then edit `/etc/default/telegraf.env` to configure the relevant settings.
+Then edit `/etc/default/telegraf.env` to configure the relevant settings for the
+telegraf daemon.
 
-Now you can start the service by `systemctl start telegraf`
 
+Then install
+```shell
+make install
+```
