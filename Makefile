@@ -6,6 +6,8 @@ configure:
 	cp -i ./bin/telegraf /usr/bin
 	cp -i ./bin/haika /usr/bin
 	cp -i  ./etc/telegraf.conf /etc/telegraf/telegraf.conf
+	cp -i ./scripts/voxbox-calls /usr/bin
+	cp -i ./scripts/voxbox-sms /usr/bin
 
 install:
 	./scripts/install_telegraf.sh
