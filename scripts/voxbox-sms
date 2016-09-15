@@ -3,7 +3,6 @@
 FILTER="from ring to master"
 FILENAME=/home/fri/fessbox/backend-node/log/debug.log
 SUFFIX=`date '+%Y.%m.%d-%H'`
-echo $FILENAME-$SUFFIX
 
 if [ -s $FILENAME-$SUFFIX ]
         then /usr/bin/grep -cF "$FILTER" $FILENAME-$SUFFIX
