@@ -11,7 +11,7 @@ configure:
 	cp -i  ./etc/telegraf.conf /etc/telegraf/telegraf.conf
 	cp -i ./scripts/voxbox-calls /usr/bin
 	cp -i ./scripts/voxbox-sms /usr/bin
-	cp -i ./scripts//metrics usr/bin
+	cp -i ./scripts//metrics /usr/bin
 
 install:
 	./scripts/install_telegraf.sh
