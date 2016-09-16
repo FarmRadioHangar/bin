@@ -1,0 +1,6 @@
+#!/bin/sh
+
+calls=$(/usr/bin/voxbox-calls)
+sms=$(/usr/bin/voxbox-sms)
+
+echo " {\"sms_in\":$sms,\"calls_in\":$calls}"
