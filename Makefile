@@ -2,6 +2,8 @@ all:
 	@echo "yay!"
 
 configure:
+	chmod 755  ./scripts/voxbox-calls 
+	chmod 755  ./scripts/voxbox-sms 
 	mkdir -p /etc/telegraf
 	cp -i ./bin/telegraf /usr/bin
 	cp -i ./bin/haika /usr/bin
